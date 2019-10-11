@@ -11,7 +11,7 @@ window.onload = function() {
   const MIN_SIZE      = 7;
   const MAX_SIZE      = 5;
   const originPoint   = { x: 400, y: 400 };
-  const colors        = ["#d32f2f", "#ff6f00", "#c2185b", "#4466FF", "#303f9f", "#ff7043"];
+  const colors        = ["#d32f2f", "#ff6f00", "#c2185b", "#4466FF", "#303f9f", "#ff7043", "#d50000", "#dd2c00"];
   let isMouseDown     = false;
 
   document.body.appendChild(canvas);

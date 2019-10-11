@@ -2,7 +2,7 @@ window.onload = function() {
   const canvas        = document.createElement("CANVAS");
   const context       = canvas.getContext("2d");
   const particles     = [];
-  const NUM_PARTICLES = 3000;
+  const NUM_PARTICLES = 4000;
   const GRAVITY       = 0;
   const MIN_X_VEL     = -0.5;
   const MAX_X_VEL     = 0.5;
@@ -10,7 +10,7 @@ window.onload = function() {
   const MAX_Y_VEL     = -1;
   const MIN_SIZE      = 7;
   const MAX_SIZE      = 5;
-  const originPoint   = { x: 400, y: 400 };
+  const originPoint   = { x: window.innerWidth/2, y: window.innerHeight};
   const colors        = ["#d32f2f", "#ff6f00", "#c2185b", "#4466FF", "#303f9f", "#ff7043", "#d50000", "#dd2c00"];
   let isMouseDown     = false;
 
@@ -22,7 +22,6 @@ window.onload = function() {
   document.body.style.background = "#111111";
 
   canvas.style.background = "#111111";
-  canvas.style.border = "solid 4px white"
   canvas.style.display = "block";
   canvas.style.margin = "0 auto";
   canvas.style.marginTop = `${((window.innerHeight / 2) - (canvas.height / 2))}px`;
